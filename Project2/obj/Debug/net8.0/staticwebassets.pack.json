@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/Logo.jpg",
+      "PackagePath": "staticwebassets/Logo.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/scripts/index.js",
+      "PackagePath": "staticwebassets/scripts/index.js"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/scripts/jquery.js",
+      "PackagePath": "staticwebassets/scripts/jquery.js"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/scripts/package-lock.json",
+      "PackagePath": "staticwebassets/scripts/package-lock.json"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/scripts/package.json",
+      "PackagePath": "staticwebassets/scripts/package.json"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/Download.json",
+      "PackagePath": "staticwebassets/source/Download.json"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/dolphin.jpg",
+      "PackagePath": "staticwebassets/source/dolphin.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/eagle.jpg",
+      "PackagePath": "staticwebassets/source/eagle.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/elephant.jpg",
+      "PackagePath": "staticwebassets/source/elephant.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/giraffe.jpg",
+      "PackagePath": "staticwebassets/source/giraffe.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/hawk.jpg",
+      "PackagePath": "staticwebassets/source/hawk.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/kangaroo.jpg",
+      "PackagePath": "staticwebassets/source/kangaroo.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/owl.jpg",
+      "PackagePath": "staticwebassets/source/owl.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/penguin.jpg",
+      "PackagePath": "staticwebassets/source/penguin.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/salmon.jpg",
+      "PackagePath": "staticwebassets/source/salmon.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/source/shark.jpg",
+      "PackagePath": "staticwebassets/source/shark.jpg"
+    },
+    {
+      "Id": "/Users/roee/Projects/Project2/Project2/wwwroot/styles/StyleSheet.css",
+      "PackagePath": "staticwebassets/styles/StyleSheet.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PetShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.PetShop.props",
+      "PackagePath": "build\\PetShop.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.PetShop.props",
+      "PackagePath": "buildMultiTargeting\\PetShop.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.PetShop.props",
+      "PackagePath": "buildTransitive\\PetShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

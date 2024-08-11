@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{1A14A3FD-206F-4176-8FA6-27175367BF9D}|https">
+  <MonoDevelop.Ide.ItemProperties.PetShop PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets">
+    <Files>
+      <File FileName="Project2/Controllers/HomeController.cs" />
+      <File FileName="Project2/Controllers/CatalogController.cs" />
+      <File FileName="Project2/Models/Category.cs" />
+      <File FileName="Project2/Models/Animal.cs" />
+      <File FileName="../../../../usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" Line="151" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PetShop" expanded="True">
+            <Node name="PetShop" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="Views" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

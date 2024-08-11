@@ -1,0 +1,27 @@
+﻿@model PetShop.Models.Animal
+    <div class="card1" style="width: 18rem">
+    
+    <img class="CardImg" src="~/source/@Model.PictureName" alt="Animal Image" />
+        <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text">@Model.Description</p>
+        </div>
+    </div>
+
+<form asp-controller="Catalog" asp-action="InsertComment" method="post">
+    <div>
+        <label for="CommentText">Add Comment:</label>
+        <textarea name="CommentText" rows="2" cols="10" required maxlength="20"></textarea>
+    </div>
+    <input type="hidden" class="input" id="animalId" name="animalId" value="@Model.AnimalId" />
+    <button type="submit">Add Comment</button>
+</form>
+
+<ul class="list-group list-group-flush">
+        @foreach (var comment in Model.Comment!)
+        {
+          <li class="list-group-item">
+            @comment.CommentText
+         </li>
+        }
+</ul>

@@ -1,0 +1,24 @@
+﻿@model IEnumerable<PetShop.Models.Animal>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="CardContainer">
+    @foreach (var animal in Model!)
+    {
+        <div class="card1" style="width: 18rem">
+            <img class="CardImg" src="~/source/@(animal.Name).jpg" alt="Animal Image" />
+            <div class="card-body"> 
+                <h5 class="card-title">@animal.Name</h5>
+                <p class="card-text">@animal.Description</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Number of Comments: @(animal.Comment?.Count ?? 0)</li>
+            </ul>
+        </div>
+    }
+
+</div>
+
+

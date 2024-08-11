@@ -1,0 +1,31 @@
+﻿@model PetShop.Models.Animal
+
+<form asp-controller="Admin" asp-action="UpdateAnimal" method="post">
+    <label for="AnimalName">Animal Name:</label>
+    <input name="AnimalName" class="form" type="text" placeholder="Please enter the animal name" maxlength="20" />
+    @Html.ValidationMessage("AnimalName")
+    <br/>
+    <label for="AnimalAge">Animal age:</label>
+    <input name="AnimalAge" class="form" type="text" placeholder="Please enter the animal age" min="0.01" max="10000" />
+    @Html.ValidationMessage("Animalage")
+    <label for="categoryId">Category:</label>
+    <select class="form-control" id="categoryId" name="_categoryId">
+        @foreach (var category in ViewBag.CategoryList)
+        {
+            <option value="@category.CategoryId">@category.Name</option>
+        }
+    </select>
+    <label for="file">Choose a file:</label>
+        <input type="file" name="file" id="file" accept=".png, .jpg, .jpeg" onchange="previewImage(event)">
+        <div>
+            <h3>Image Preview:</h3>
+            <img id="imagePreview" alt="Image Preview">
+        </div>
+    <input type="hidden" class="input" id="animalId" name="animalId" value="@Model.AnimalId" />
+    <input type="hidden" class="input" id="PictureName" name="PictureName" value="@Model.PictureName" />
+
+     <label for="DescriptionText">Description:</label>
+    <textarea name="DescriptionText" rows="2" cols="10" required maxlength="150"></textarea>
+      <br/>
+    <button type="submit" class="btn btn-success">Create new animal</button>
+</form>

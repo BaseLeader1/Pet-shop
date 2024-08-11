@@ -1,0 +1,36 @@
+﻿.card1 {
+  display: flex;
+  width: 18rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  flex-wrap: wrap;
+  margin: 10px;
+  align-content: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+.CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.CardImg {
+  height: 200px;
+  width: 200px;
+}
+.button {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+.CategoryList {
+  width: 200px;
+}
+.input {
+  width: 300px;
+}

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<PetShop.Models.Category>
+@{
+    var animals = ViewBag.animals;
+}
+
+<form id="categoryForm" action="/Catalog/Index" method="post">
+    <div class="form-group">
+        <label for="categoryId">Category:</label>
+        <select class="form-control CategoryList" id="categoryId" name="_categoryId" >
+            <option value="0">ALL</option>
+            @foreach (var category in Model)
+            {
+                <option value="@category.CategoryId">@category.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+<div class="CardContainer">
+    @foreach (var animal in animals)
+    {
+        <div class="card1">
+            <img class="CardImg" src="~/source/@animal.PictureName" alt="Animal Image" />
+            <div class="card-body">              
+                <h5 class="card-title">@animal.Name</h5>
+            </div>
+            <label>Find out more and comment</label>
+            <form asp-controller="Catalog" asp-action="Details">
+                <a asp-controller="Catalog" asp-action="Details" asp-route-_animalId="@animal.AnimalId" class="btn Details">Details</a>
+        </form> 
+        </div>
+    }
+</div>

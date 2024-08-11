@@ -1,0 +1,45 @@
+﻿@model IEnumerable<PetShop.Models.Category>
+@{
+    var animals = ViewBag.animals;
+}
+<form asp-controller="Admin" asp-action="Insert" method="get">
+    <button type="submit" class="btn btn-success">Add new animal</button>
+</form>
+
+
+<form id="categoryForm" action="/admin/Index" method="post">
+    <div class="form-group">
+        <label for="categoryId">Category:</label>
+        <select class="form-control CategoryList" id="categoryId" name="_categoryId" >
+            <option value="0">ALL</option>
+            @foreach (var category in Model)
+            {
+                <option value="@category.CategoryId">@category.Name</option>
+            }
+        </select>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+
+<div class="CardContainer">
+    @foreach (var animal in animals)
+    {
+        <div class="card1">
+            <img class="CardImg" src="~/source/@(animal.Name).jpg" alt="Animal Image" />
+            <div class="card-body">
+                <h5 class="card-title">@animal.Name</h5>
+            </div>
+            <a asp-controller="Admin" asp-action="UpdateAnimal" asp-route-_animalId="@animal.AnimalId">Edit</a> |
+               <a asp-controller="Catalog" asp-action="Details" asp-route-_animalId="@animal.AnimalId">Details</a> |
+               <a id="Delet" asp-controller="Admin" asp-action="DeleteAnimal" asp-route-_animalId="@animal.AnimalId">Delete</a>
+        </div>
+    }
+</div>
+
+<script>
+    var DeletButton = document.getElementById('Delet');
+    DeletButton.addEventListener('click', function (event) {
+        alert("The animal has been deleted");
+    }
+</script>
